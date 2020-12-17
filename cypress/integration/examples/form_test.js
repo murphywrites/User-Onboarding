@@ -43,5 +43,8 @@ describe("User-Onboarding form app", () => {
       it("Validation test", () => {
         cy.get('input[name="username"]').type("M{backspace}");
         cy.get('div.errors').contains('required');  
+        cy.get('input[name="username"]').type("Mmurph917")
+        cy.get('input[name="email"]').type("M{backspace}");
+        cy.get('div.errors').contains('email');  
       })
 });
