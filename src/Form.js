@@ -58,7 +58,7 @@ function Form(props) {
                     type="checkbox"
                     />
                 </label>
-                <button disabled={disabled}>submit</button>
+                <button className="submitButton" disabled={disabled}>submit</button>
             </div>
         </form>
     </div>

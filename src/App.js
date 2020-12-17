@@ -106,7 +106,7 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <div>
+      <div className="errors">
       {errors.username}<br/>
       {errors.email}<br/>
       {errors.password}<br/>
